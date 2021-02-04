@@ -84,52 +84,43 @@
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12" style="padding: 10px;">
                     <div class="bg-light pinside30">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h1>예약자 정보 입력</h1>
-                                <form>
+                                <hr>
+                                <form name="reservation-info">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="form-group has-feedback">
-                                                <label class="control-label" for="name">name</label>
+                                                <label class="control-label" for="name">이름</label>
                                                 <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                    <input type="text" class="form-control" id="name">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="phone">Phone</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                                    <input type="text" class="form-control" id="phone">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="email">email</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                    <input type="text" class="form-control" id="email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="subject">Subject</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-globe"></i></span>
-                                                    <input type="text" class="form-control" id="subject">
+                                                    <input type="text" class="form-control" id="name" placeholder="예약자의 성함을 입력해주세요.">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="form-group">
-                                                <label class="control-label" for="textarea">요청 사항</label>
-                                                <textarea class="form-control" id="textarea" name="textarea" rows="6" placeholder=""></textarea>
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label" for="phone">연락처</label>
+                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                    <input type="text" class="form-control" id="phone" placeholder="예약자 연락처 ex) 010-0000-0000">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <label class="control-label" for="textarea">요청 사항</label>
+                                                <textarea class="form-control" id="textarea" name="textarea" rows="6" placeholder="요청사항을 입력해주세요."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="form-group has-feedback">
+                                                <p><font color="red" style="font-weight: bold;"> * 21세 이상은 별도 문의</font></p>
+                                                <p class="text-center"><input type="checkbox"> 개인정보 수집 및 이용에 동의합니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="form-group text-center">
                                                 <button id="singlebutton" name="singlebutton" class="btn btn-default">예약하기</button>
                                             </div>
@@ -140,59 +131,113 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12" style="padding: 10px;">
                     <div class="bg-light pinside30">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h1>Get in touch with us</h1>
-                                <p>Please complete the form below. We'll do everything we can to respond to you as quickly as possible.</p>
-                                <form>
+                                <h1>실시간 견적 내기</h1>
+                                <hr>
+                                <form name="reservation">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="name">name</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                    <input type="text" class="form-control" id="name">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="email">email</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                    <input type="text" class="form-control" id="email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="subject">Subject</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-globe"></i></span>
-                                                    <input type="text" class="form-control" id="subject">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group has-feedback">
-                                                <label class="control-label" for="phone">Phone</label>
-                                                <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                                                    <input type="text" class="form-control" id="phone">
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="form-group">
-                                                <label class="control-label" for="textarea">Message</label>
-                                                <textarea class="form-control" id="textarea" name="textarea" rows="6" placeholder=""></textarea>
-                                            </div>
+                                            <span class="span-control">
+                                                <label class="control-label" for="name">렌트 상품</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <label style="margin-right: 20px;"><input type="radio" id="rent-product" name="rent-product" value="rentMonth">&nbsp; 월렌트</label>
+                                                <label><input type="radio" id="rent-product" name="rent-product" value="rentYear">&nbsp; 12개월 렌트</label>
+                                            </span>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <button id="singlebutton" name="singlebutton" class="btn btn-default">send message</button>
-                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <span class="span-control">
+                                                <label class="control-label" for="name">차종 선택</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <select name="car-type" class="form-control-select">
+                                                    <option value="kor-s" selected>국산 승용</option>
+                                                    <option value="kor-m">국산승합•RV</option>
+                                                    <option value="foreign">수입차</option>
+                                                </select>
+                                                <select name="car-size" class="form-control-select">
+                                                    <option value="small" selected>소형</option>
+                                                    <option value="middle">중형</option>
+                                                    <option value="large">대형</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <span class="span-control">
+                                                <label class="control-label" for="name">차명</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <input type="text" class="form-control-span" id="car-name">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                            <span class="span-control">
+                                                <label class="control-label" for="kliometer">주행 거리</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <input type="kliometer" class="form-control-span2" id="car-name">
+                                                <label> &nbsp; km </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row top-text">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-text">
+                                            <span class="span-control">
+                                                <label class="control-label" for="kliometer">렌트료</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <font class="form-control-text top-text" id="car-name">00,000원</font>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row top-text">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <span class="span-control">
+                                                <label class="control-label" for="kliometer">VAT</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <font class="form-control-text top-text" id="car-name">00,000원</font>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row top-text">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <span class="span-control">
+                                                <label class="control-label" for="kliometer">보증금</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <font class="form-control-text top-text" id="car-name">00,000원</font>
+                                            </span>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <span class="span-control">
+                                                <label class="control-label" for="kliometer">총 렌트료</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <font class="form-control-text top-text" id="car-name">00,000원</font>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <span class="span-control">
+                                                <label class="control-label" for="kliometer">대여 조건</label>
+                                            </span>
+                                            <span class="span-input">
+                                                <font class="form-control-text top-text" id="car-name">방문 기준, 자차 포함, 정비 포함, 26세 이상 기준</font>
+                                            </span>
                                         </div>
                                     </div>
                                 </form>
