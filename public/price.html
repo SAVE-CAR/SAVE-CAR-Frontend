@@ -14,7 +14,8 @@
     <link href="../src/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,600i,700" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link href="../src/css/font-awesome.min.css" rel="stylesheet">
     <!-- Style -->
     <link href="../src/css/style.css" rel="stylesheet">
@@ -24,9 +25,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- table Style -->
+    <link href="../src/css/table.css" rel="stylesheet">
+
+    <script>
+        // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+        $(window).on("load resize ", function() {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+            $('.tbl-header').css({'padding-right':scrollWidth});
+        }).resize();
+    </script>
 </head>
 
 <body>
+<!--End of header -->
     <!-- header-top -->
     <div class="header navbar-fixed-top">
         <div class="container">
@@ -39,24 +52,9 @@
                         <div id="navigation">
                             <ul>
                                 <li class="active"><a href="ex_index.html" title="Home">Home</a></li>
-                                <li class="has-sub"><a href="rent_month.html" title="Service List">월렌트+12개월렌트</a>
-                                    <ul>
-                                        <li><a href="service-list.html" title="Service List">Service List</a></li>
-                                        <li><a href="service-detail.html" title="Service Detail">Service Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub"><a href="rent_long_term.html" title="Portfolio">저신용장기렌트</a>
-                                    <ul>
-                                        <li><a href="projects.html" title="Projects">Projects</a></li>
-                                        <li><a href="projects-detail.html" title="Projects Detail">Projects Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub"><a href="rent_camping.html" title="Blog">캠핑카렌트</a>
-                                    <ul>
-                                        <li><a href="blog-default.html" title="Blog">Blog Default</a></li>
-                                        <li><a href="blog-single.html" title="Blog Single ">Blog Single</a></li>
-                                    </ul>
-                                </li>
+                                <li class="has-sub"><a href="rent_month.html" title="Service List">월렌트+12개월렌트</a></li>
+                                <li class="has-sub"><a href="rent_long_term.html" title="Portfolio">저신용장기렌트</a></li>
+                                <li class="has-sub"><a href="rent_camping.html" title="Blog">캠핑카렌트</a></li>
                                 <li><a href="price.html" title="Contact Us">렌트가격표</a></li>
                                 <li><a href="ex_index.html" title="Testimonial">1661-3331</a> </li>
                             </ul>
@@ -81,7 +79,512 @@
         </div>
     </div>
 
+    <!--feature section -->
+  <section id="feature" class="feature sections">
+      <div class="container">
+          <div class="row">
+              <div class="main_portfolio pinside30">
+                  <div class="work_menu text-center">
+                      <div id="filters" class="toolbar mb2 mt2">
+                          <a href="#month"><button class="btn-md fil-cat filter">월 렌트</button></a> /
+                          <a href="#year"><button class="btn-md fil-cat filter">12개월 렌트</button></a> /
+                          <a href="#short-term"><button class="btn-md fil-cat filter">단기 렌트</button></a> /
+                          <a href="#camping-car"><button class="btn-md fil-cat filter">캠핑카</button></a>
+                      </div> 
+                      <div class="separator"></div>
+                  </div>    
+              </div>
+              <div class="main_feature text-center">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                      <div class="single_feature">
+                          <div class="single_feature_icon">
+                              <i class="fas fa-car fa-4x"></i>
+                          </div>
+                          <h2>정비 포함</h2>
+                          <div class="separator3"></div>
+                          <p>4년 계약만큼 저렴하다</p>
+                          <p>필요한 개월수만 이용하자 !</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                      <div class="single_feature">
+                          <div class="single_feature_icon">
+                              <i class="fas fa-key fa-4x"></i>
+                          </div>
+                          <h2>자차 포함</h2>
+                          <div class="separator3"></div>
+                          <p>26세 기준</p>
+                          <p>21세 추가요금 발생 !</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                      <div class="single_feature">
+                          <div class="single_feature_icon">
+                              <i class="fas fa-coins fa-4x"></i>
+                          </div>
+                          <h2>주행거리별 요금제</h2>
+                          <div class="separator3"></div>
+                          <p>마일리지 제도를 이용하여</p>
+                          <p>차량유지비용을 SAVE 하라</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                      <div class="single_feature">
+                          <div class="single_feature_icon">
+                             <i class="fas fa-people-arrows fa-4x"></i>
+                          </div>
+                          <h2>송파 장지역 방문 기준</h2>
+                          <div class="separator3"></div>
+                          <p>VAT 별도 요금</p>
+                          <p>지방배회차 상담 환영</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--End of container -->
+    </section>
+    <!--End of feature Section -->
+    
+      <!---------------->
+      <!--- 단기 렌트료 --->
+      <!---------------->
+    <section class="price-table" id="month">
+      <div class="month text-center" id="month">
+        <h1>월렌트료</h1>
+        <div class="separator"></div>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>차종</th>
+                <th>차명</th>
+                <th>보증금</th>
+                <th>2000km</th>
+                <th>2500km</th>
+                <th>3000km</th>
+                <th>4000km</th>
+                <th>21세</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
+      <!------------------>
+      <!--- 12개월 렌트료 --->
+      <!------------------>
+
+    <section class="price-table" id="year">
+      <div class="year text-center">
+        <h1>12개월 렌트료</h1>
+        <div class="separator"></div>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>차종</th>
+                <th>차명</th>
+                <th>보증금</th>
+                <th>2000km</th>
+                <th>2500km</th>
+                <th>3000km</th>
+                <th>4000km</th>
+                <th>21세</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+      <!---------------->
+      <!--- 단기 렌트료 --->
+      <!---------------->
+
+    <section class="price-table" id="short-term">
+      <div class="short-term text-center">
+        <h1>단기 렌트료</h1>
+        <div class="separator"></div>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>차종</th>
+                <th>차명</th>
+                <th>보증금</th>
+                <th>2000km</th>
+                <th>2500km</th>
+                <th>3000km</th>
+                <th>4000km</th>
+                <th>21세</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+      <!---------------->
+      <!-- 캠핑카 렌트료 -->
+      <!---------------->
+    <section class="price-table" id="camping-car">
+      <div class="camping-car text-center">
+        <h1>캠핑카 렌트료</h1>
+        <div class="separator"></div>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>차종</th>
+                <th>차명</th>
+                <th>보증금</th>
+                <th>2000km</th>
+                <th>2500km</th>
+                <th>3000km</th>
+                <th>4000km</th>
+                <th>21세</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td>경차</td>
+                <td>모닝 15년이하</td>
+                <td>30만</td>
+                <td>340,000</td>
+                <td>364,000</td>
+                <td>388,000</td>
+                <td>435,000</td>
+                <td>50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </section>
+      
   <!----------------------------------------->
   <!----------- introduce section ----------->
   <!----------------------------------------->
@@ -161,6 +664,6 @@
     <script src="../src/js/bootstrap.min.js"></script>
     <script src="../src/js/menumaker.js"></script>
     <script src="../src/js/navigation.js" type="text/javascript"></script>
-</body>
 
+</body>
 </html>

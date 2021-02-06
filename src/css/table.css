@@ -1,5 +1,5 @@
 @charset "UTF-8";
-h1 {
+.price-table h1 {
   font-size: 30px;
   color: #000;
   text-transform: uppercase;
@@ -10,14 +10,14 @@ h1 {
 table {
   width: 100%;
   table-layout: fixed;
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
+  background: -webkit-linear-gradient(left, #f8f6f2, #f8f6f2);
+  background: linear-gradient(to right, #f8f6f2, #f8f6f2);
 }
 .tbl-header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .tbl-content {
-  height: 300px;
+  height: 500px;
   overflow-x: auto;
   margin-top: 0px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -918,19 +918,24 @@ Separator
 .main_feature .single_feature:hover .single_feature_icon i {
   transform: rotate(-45deg);
 }
-.main_feature .single_feature:hover h4 {
+.main_feature .single_feature:hover h2 {
   color: #e74c3c;
 }
 .main_feature .single_feature .single_feature_icon {
   border: 1px solid #ddd;
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 150px;
   line-height: 70px;
-  margin: 20px auto;
+  margin: 50px auto;
   transition: all 0.6s;
 }
+
+.single_feature p {
+  font-size: 18px;
+}
+
 .main_feature .single_feature i {
-  margin-bottom: 30px;
+  margin: 35px;
   color: #e74c3c;
   transition: all 0.6s;
 }
@@ -938,6 +943,14 @@ Separator
   transition: all 0.6s;
 }
 
+/*====================================================================
+                        price-table Section 
+======================================================================*/
+.price-table {
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
 /*======================================================================
                     portfolio section css
 ========================================================================*/
@@ -962,7 +975,6 @@ button.btn-md {
   color: #444;
   letter-spacing: 1px;
   margin: 0;
-  font-size: 0.8125rem;
   border-radius: 0px;
   margin-top: 0px;
   background-color: transparent;
