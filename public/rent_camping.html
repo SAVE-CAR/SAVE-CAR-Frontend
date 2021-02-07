@@ -43,24 +43,9 @@
                         <div id="navigation">
                             <ul>
                                 <li class="active"><a href="ex_index.html" title="Home">Home</a></li>
-                                <li class="has-sub"><a href="rent_month.html" title="Service List">월렌트+12개월렌트</a>
-                                    <ul>
-                                        <li><a href="service-list.html" title="Service List">Service List</a></li>
-                                        <li><a href="service-detail.html" title="Service Detail">Service Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub"><a href="rent_long_term.html" title="Portfolio">저신용장기렌트</a>
-                                    <ul>
-                                        <li><a href="projects.html" title="Projects">Projects</a></li>
-                                        <li><a href="projects-detail.html" title="Projects Detail">Projects Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub"><a href="rent_camping.html" title="Blog">캠핑카렌트</a>
-                                    <ul>
-                                        <li><a href="blog-default.html" title="Blog">Blog Default</a></li>
-                                        <li><a href="blog-single.html" title="Blog Single ">Blog Single</a></li>
-                                    </ul>
-                                </li>
+                                <li class="has-sub"><a href="rent_month.html" title="Service List">월렌트+12개월렌트</a></li>
+                                <li class="has-sub"><a href="rent_long_term.html" title="Portfolio">저신용장기렌트</a></li>
+                                <li class="has-sub"><a href="rent_camping.html" title="Blog">캠핑카렌트</a></li>
                                 <li><a href="price.html" title="Contact Us">렌트가격표</a></li>
                                 <li><a href="ex_index.html" title="Testimonial">1661-3331</a> </li>
                             </ul>
@@ -88,7 +73,7 @@
    <!--feature section -->
    <section id="feature" class="feature sections">
         <div class="container">
-            <div class="row">
+            <div class="row pinside50">
                 <div class="main_portfolio pinside30">
                     <div class="work_menu text-center">
                         <div id="filters" class="toolbar mb2 mt2">
@@ -124,8 +109,7 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <h3>면허 종류</h3>
-                                <!-- 이 부분 더 수정해야 함 -->
-                                <input type="radio" id="car-tyle" name="car-type" readonly> 1종보통
+                                <input type="radio" id="car-tyle" name="car-type" checked="checked" readonly> 1종보통
                                 <input type="radio" id="car-tyle" name="car-type" readonly> 2종보통
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -136,7 +120,30 @@
                     </div>
                 </div>
             </div>
-            <!-- 사진 -->         
+            <!-- 사진 -->
+            <div class="row text-center pinside30">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <img src="../src/img/camping-car1.jpg" width="70%" height="70%">
+                    </div>
+                    <div class="row">
+                        <img src="../src/img/IMG_0360.JPG" width="10%" height="10%">
+                        <img src="../src/img/IMG_0361.JPG" width="10%" height="10%">
+                        <img src="../src/img/IMG_0362.JPG" width="10%" height="10%">
+                        <img src="../src/img/IMG_0363.JPG" width="10%" height="10%">
+                        <img src="../src/img/IMG_0364.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0367.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0368.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0370.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0371.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0372.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0374.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0375.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0376.JPG" width="10%" height="100%">
+                        <img src="../src/img/IMG_0377.JPG" width="10%" height="100%">
+                    </div>
+                </div>
+            </div>         
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 10px;">
                     <div class="bg-light">
@@ -185,6 +192,8 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
+                    <div class="bg-light">
                         <div class="row pinside30">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <h2>CAPMER 시설</h2>
@@ -216,23 +225,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" style="padding: 10px;">
-                    <div class="bg-light pinside30">
+
+                    <div class="bg-light pinside30" style="margin-top: 20px;">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h1>예약자 정보 입력</h1>
                                 <hr>
                                 <form name="reservation-info">
                                     <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group has-feedback">
                                                 <label class="control-label" for="name">이름</label>
                                                 <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -240,7 +241,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group has-feedback">
                                                 <label class="control-label" for="phone">연락처</label>
                                                 <div class="input-group"> <span class="input-group-addon"><i class="fa fa-phone"></i></span>
@@ -270,17 +271,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 10px;">
-                    <div class="bg-light">
+                    <div class="bg-light pinside30" style="margin-top: 20px;">
                         <div class="row pinside30">
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                 <h2>CAPMER 렌트정책</h2>

@@ -86,6 +86,7 @@ button.btn-md:focus,
 }
 button.btn-md {
   text-align: center;
+  font-size: 25px;
   color: #444;
   letter-spacing: 1px;
   margin: 0;
