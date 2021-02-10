@@ -771,6 +771,7 @@ opacity: .5; }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width:1200px) {
     .navigation { float: none; }
+    .campingnav { float: none; }
     .hero-title { font-size: 25px; line-height: 40px; }
     .hero-section { padding-top: 130px; padding-bottom: 50px; }
     .comment-info { padding-left: 100px; }
@@ -788,6 +789,7 @@ opacity: .5; }
 /* Medium Devices, Desktops */
 @media only screen and (max-width:992px) {
     .navigation { float: none; }
+    .campingnav { float: none; }
     .hero-title { font-size: 25px; line-height: 40px; }
     .hero-section { padding-top: 50px; padding-bottom: 50px; }
     .comment-info { padding-left: 100px; }
@@ -804,6 +806,7 @@ opacity: .5; }
 /* Small Devices, Tablets */
 @media only screen and (max-width:768px) {
     .navigation { float: none; background: #0e0c0b; }
+    .campingnav { float: none; }
     .hero-title { font-size: 25px; line-height: 40px; }
     .hero-section { padding-top: 50px; padding-bottom: 50px; }
     .comment-info { padding-left: 100px; }
@@ -821,6 +824,7 @@ opacity: .5; }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width:480px) {
     .navigation { float: none; }
+    .campingnav { float: none; }
     .hero-title { font-size: 25px; line-height: 40px; }
     .hero-section { padding-top: 50px; padding-bottom: 50px; }
     .comment-info { padding-left: 100px; }
@@ -838,6 +842,7 @@ opacity: .5; }
 /* Custom, iPhone Retina */
 @media only screen and (max-width:320px) {
     .navigation { float: none; }
+    .campingnav { float: none; }
     .hero-title { font-size: 25px; line-height: 40px; }
     .hero-section { padding-top: 50px; padding-bottom: 50px; }
     .comment-info { padding-left: 100px; }
